@@ -2,7 +2,7 @@
 
 namespace NeyroHospital.Controllers
 {
-    public class PatientsController : Controller
+    public class OutpatientsController : Controller
     {
         public IActionResult Index()
         {

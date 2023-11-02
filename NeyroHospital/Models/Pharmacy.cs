@@ -18,5 +18,6 @@ namespace NeyroHospital.Models
         public DateTime ExpireDate { get; set; }
         [Required]
         public int Stock { get; set; }
+       
     }
 }

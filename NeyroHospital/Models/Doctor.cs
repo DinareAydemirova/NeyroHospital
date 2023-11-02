@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Http;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace NeyroHospital.Models
@@ -17,6 +18,8 @@ namespace NeyroHospital.Models
         public string Email { get; set; }
         [Required]
         public string Phone { get; set; }
+        [Required]
+        
         public bool IsDeactive { get; set; }
         public Department Department { get; set; }
         public int DepartmentId { get; set; }
