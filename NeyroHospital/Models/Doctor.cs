@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NeyroHospital.Models
 {
@@ -23,7 +25,11 @@ namespace NeyroHospital.Models
         public bool IsDeactive { get; set; }
         public Department Department { get; set; }
         public int DepartmentId { get; set; }
+        public List<Inpatient> Inpatient { get; set; }
+        public List<Outpatient> OutPatient { get; set; }
         public List<Appointment> Appointments { get; set; }
         public DocOffice DocOffice { get; set; }
+        [NotMapped]
+        public IFormFile Photo { get; set; }
     }
 }
